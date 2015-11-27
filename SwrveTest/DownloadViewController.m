@@ -107,6 +107,9 @@
 
 
 #pragma mark - Animation
+//
+// Create a circle Shape Layer and add it to the Button View
+//
 -(void)addLayerToButtonView
 {
     int radius = 50;

@@ -69,6 +69,9 @@
     __weak ImageViewController * weakSelf = self;
     Comms *ci = [[Comms alloc] init];
     
+    //
+    // Call the function with a success and failure block for post processing
+    //
     [ci loadImageToImageView:self.downloadImageView withUrlString:self.imageUrlString andSuccessBlock:^(NSURLRequest * request, NSHTTPURLResponse * response, UIImage * image)
      {
          [weakSelf.activityIndicator stopAnimating];

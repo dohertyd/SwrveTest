@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yUt-2Y-cSp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Download View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DownloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image URL" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uez-qE-fk4">
+                                <rect key="frame" x="50" y="84" width="500" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="done"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wd-wO-nnC">
+                                <rect key="frame" x="247.5" y="134" width="105" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmt-jP-2iF">
+                                        <rect key="frame" x="22.5" y="37.5" width="60" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                                        <state key="normal" title="Download">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downloadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYG-KM-rEp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="Fpi-9b-g7h"/>
+                                    <constraint firstAttribute="width" constant="105" id="OOE-EL-fnV"/>
+                                    <constraint firstItem="Qmt-jP-2iF" firstAttribute="centerY" secondItem="0Wd-wO-nnC" secondAttribute="centerY" id="jLg-SA-lac"/>
+                                    <constraint firstItem="Qmt-jP-2iF" firstAttribute="centerX" secondItem="0Wd-wO-nnC" secondAttribute="centerX" id="oce-zJ-dJ6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.251953125" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Wd-wO-nnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWN-Qm-TvH"/>
+                            <constraint firstItem="uez-qE-fk4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rry-1c-cd8"/>
+                            <constraint firstItem="0Wd-wO-nnC" firstAttribute="top" secondItem="uez-qE-fk4" secondAttribute="bottom" constant="20" id="TGe-Kq-2Tk"/>
+                            <constraint firstItem="uez-qE-fk4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="gEV-5d-1aU"/>
+                            <constraint firstAttribute="trailing" secondItem="uez-qE-fk4" secondAttribute="trailing" constant="50" id="gcG-Xb-VPu"/>
+                            <constraint firstItem="uez-qE-fk4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nze-vg-Yi6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3P-lC-fqI"/>
+                    <connections>
+                        <outlet property="buttonView" destination="0Wd-wO-nnC" id="ttG-Bq-YQz"/>
+                        <outlet property="imageUrlField" destination="uez-qE-fk4" id="GKQ-Ln-zBh"/>
+                        <segue destination="TRK-nu-Dix" kind="show" identifier="showImage" id="89b-rw-5zp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="337"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="YAN-Hg-ich">
+            <objects>
+                <viewController id="TRK-nu-Dix" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9bL-ne-aNa"/>
+                        <viewControllerLayoutGuide type="bottom" id="j2P-RG-FH1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DXx-P3-ghg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-kr-Mep">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j2P-RG-FH1" firstAttribute="top" secondItem="A3R-kr-Mep" secondAttribute="bottom" id="IIX-c1-ygq"/>
+                            <constraint firstAttribute="trailing" secondItem="A3R-kr-Mep" secondAttribute="trailing" id="Z9X-F6-pCw"/>
+                            <constraint firstItem="A3R-kr-Mep" firstAttribute="leading" secondItem="DXx-P3-ghg" secondAttribute="leading" id="jjb-v4-ves"/>
+                            <constraint firstItem="A3R-kr-Mep" firstAttribute="top" secondItem="9bL-ne-aNa" secondAttribute="bottom" id="oep-NA-y2i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadImageView" destination="A3R-kr-Mep" id="HRE-8y-Sa7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4t-g1-BxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yMI-b0-bTV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUt-2Y-cSp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mdc-CZ-Rxm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I4M-HN-pDg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeM-mp-pqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="337"/>
+        </scene>
+    </scenes>
+</document>

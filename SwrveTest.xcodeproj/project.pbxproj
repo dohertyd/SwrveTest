@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2FB4B31C04BCA500405709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB4B21C04BCA500405709 /* main.m */; };
+		BE2FB4B61C04BCA500405709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB4B51C04BCA500405709 /* AppDelegate.m */; };
+		BE2FB4BC1C04BCA500405709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2FB4BA1C04BCA500405709 /* Main.storyboard */; };
+		BE2FB4C11C04BCA500405709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2FB4BF1C04BCA500405709 /* LaunchScreen.storyboard */; };
+		BE2FB4CC1C04BCA500405709 /* SwrveTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB4CB1C04BCA500405709 /* SwrveTestTests.m */; };
+		BE2FB4D71C04BCA500405709 /* SwrveTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB4D61C04BCA500405709 /* SwrveTestUITests.m */; };
+		BE2FB4E61C04CE1400405709 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2FB4E51C04CE1400405709 /* DownloadViewController.m */; };
+		BE928EFF1C051C7900B2C378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE928EFE1C051C7900B2C378 /* Assets.xcassets */; };
+		BE928F021C05B46500B2C378 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE928F011C05B46500B2C378 /* ImageViewController.m */; };
+		BE928F071C05CDB400B2C378 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = BE928F061C05CDB400B2C378 /* Globals.m */; };
+		BE928F091C086B8A00B2C378 /* SwerveTestGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = BE928F081C086B8A00B2C378 /* SwerveTestGlobals.m */; };
+		BE928F101C087F6600B2C378 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = BE928F0F1C087F6600B2C378 /* Comms.m */; };
+		BE928F121C08888300B2C378 /* SwrveTestComm.m in Sources */ = {isa = PBXBuildFile; fileRef = BE928F111C08888300B2C378 /* SwrveTestComm.m */; };
+		F8092512976EFCB5C7FA1226 /* libPods-SwrveTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED7CF6AAC51D9961506CED4 /* libPods-SwrveTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE2FB4C81C04BCA500405709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2FB4A61C04BCA500405709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2FB4AD1C04BCA500405709;
+			remoteInfo = SwrveTest;
+		};
+		BE2FB4D31C04BCA500405709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE2FB4A61C04BCA500405709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2FB4AD1C04BCA500405709;
+			remoteInfo = SwrveTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		361FE37AB4CA6005E0422B2E /* Pods-SwrveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwrveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwrveTest/Pods-SwrveTest.release.xcconfig"; sourceTree = "<group>"; };
+		368DF507AE96DF195AE65912 /* Pods-SwrveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwrveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwrveTest/Pods-SwrveTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9ED7CF6AAC51D9961506CED4 /* libPods-SwrveTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwrveTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2FB4AE1C04BCA500405709 /* SwrveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwrveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2FB4B21C04BCA500405709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE2FB4B41C04BCA500405709 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE2FB4B51C04BCA500405709 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE2FB4BB1C04BCA500405709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE2FB4C01C04BCA500405709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2FB4C21C04BCA500405709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2FB4C71C04BCA500405709 /* SwrveTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwrveTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2FB4CB1C04BCA500405709 /* SwrveTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwrveTestTests.m; sourceTree = "<group>"; };
+		BE2FB4CD1C04BCA500405709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2FB4D21C04BCA500405709 /* SwrveTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwrveTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2FB4D61C04BCA500405709 /* SwrveTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwrveTestUITests.m; sourceTree = "<group>"; };
+		BE2FB4D81C04BCA500405709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2FB4E41C04CE1400405709 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		BE2FB4E51C04CE1400405709 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		BE928EFE1C051C7900B2C378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE928F001C05B46500B2C378 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		BE928F011C05B46500B2C378 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		BE928F051C05CDB400B2C378 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		BE928F061C05CDB400B2C378 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		BE928F081C086B8A00B2C378 /* SwerveTestGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwerveTestGlobals.m; sourceTree = "<group>"; };
+		BE928F0E1C087F6600B2C378 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comms.h; sourceTree = "<group>"; };
+		BE928F0F1C087F6600B2C378 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comms.m; sourceTree = "<group>"; };
+		BE928F111C08888300B2C378 /* SwrveTestComm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwrveTestComm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2FB4AB1C04BCA500405709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8092512976EFCB5C7FA1226 /* libPods-SwrveTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4C41C04BCA500405709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4CF1C04BCA500405709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B5F9F92BB8B4E6433863E45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				368DF507AE96DF195AE65912 /* Pods-SwrveTest.debug.xcconfig */,
+				361FE37AB4CA6005E0422B2E /* Pods-SwrveTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE2FB4A51C04BCA500405709 = {
+			isa = PBXGroup;
+			children = (
+				BE2FB4B01C04BCA500405709 /* SwrveTest */,
+				BE2FB4CA1C04BCA500405709 /* SwrveTestTests */,
+				BE2FB4D51C04BCA500405709 /* SwrveTestUITests */,
+				BE2FB4AF1C04BCA500405709 /* Products */,
+				6B5F9F92BB8B4E6433863E45 /* Pods */,
+				EE803B1F93D976F463E93AF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2FB4AF1C04BCA500405709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FB4AE1C04BCA500405709 /* SwrveTest.app */,
+				BE2FB4C71C04BCA500405709 /* SwrveTestTests.xctest */,
+				BE2FB4D21C04BCA500405709 /* SwrveTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2FB4B01C04BCA500405709 /* SwrveTest */ = {
+			isa = PBXGroup;
+			children = (
+				BE928F0D1C087F4C00B2C378 /* Networking */,
+				BE928F041C05CCA600B2C378 /* DataModel */,
+				BE928EFE1C051C7900B2C378 /* Assets.xcassets */,
+				BE2FB4B41C04BCA500405709 /* AppDelegate.h */,
+				BE2FB4B51C04BCA500405709 /* AppDelegate.m */,
+				BE2FB4BA1C04BCA500405709 /* Main.storyboard */,
+				BE2FB4BF1C04BCA500405709 /* LaunchScreen.storyboard */,
+				BE2FB4C21C04BCA500405709 /* Info.plist */,
+				BE2FB4B11C04BCA500405709 /* Supporting Files */,
+				BE928F031C05B89600B2C378 /* ViewControllers */,
+			);
+			path = SwrveTest;
+			sourceTree = "<group>";
+		};
+		BE2FB4B11C04BCA500405709 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FB4B21C04BCA500405709 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE2FB4CA1C04BCA500405709 /* SwrveTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE928F111C08888300B2C378 /* SwrveTestComm.m */,
+				BE928F081C086B8A00B2C378 /* SwerveTestGlobals.m */,
+				BE2FB4CB1C04BCA500405709 /* SwrveTestTests.m */,
+				BE2FB4CD1C04BCA500405709 /* Info.plist */,
+			);
+			path = SwrveTestTests;
+			sourceTree = "<group>";
+		};
+		BE2FB4D51C04BCA500405709 /* SwrveTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FB4D61C04BCA500405709 /* SwrveTestUITests.m */,
+				BE2FB4D81C04BCA500405709 /* Info.plist */,
+			);
+			path = SwrveTestUITests;
+			sourceTree = "<group>";
+		};
+		BE928F031C05B89600B2C378 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FB4E41C04CE1400405709 /* DownloadViewController.h */,
+				BE2FB4E51C04CE1400405709 /* DownloadViewController.m */,
+				BE928F001C05B46500B2C378 /* ImageViewController.h */,
+				BE928F011C05B46500B2C378 /* ImageViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE928F041C05CCA600B2C378 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE928F051C05CDB400B2C378 /* Globals.h */,
+				BE928F061C05CDB400B2C378 /* Globals.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		BE928F0D1C087F4C00B2C378 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BE928F0E1C087F6600B2C378 /* Comms.h */,
+				BE928F0F1C087F6600B2C378 /* Comms.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		EE803B1F93D976F463E93AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ED7CF6AAC51D9961506CED4 /* libPods-SwrveTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2FB4AD1C04BCA500405709 /* SwrveTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2FB4DB1C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTest" */;
+			buildPhases = (
+				4DED3336E56611BCD06649D2 /* Check Pods Manifest.lock */,
+				BE2FB4AA1C04BCA500405709 /* Sources */,
+				BE2FB4AB1C04BCA500405709 /* Frameworks */,
+				BE2FB4AC1C04BCA500405709 /* Resources */,
+				3B83A7CD8DB965522B1FFF5B /* Embed Pods Frameworks */,
+				07486C8BA86032DC72B2F32A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwrveTest;
+			productName = SwrveTest;
+			productReference = BE2FB4AE1C04BCA500405709 /* SwrveTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE2FB4C61C04BCA500405709 /* SwrveTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2FB4DE1C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTestTests" */;
+			buildPhases = (
+				BE2FB4C31C04BCA500405709 /* Sources */,
+				BE2FB4C41C04BCA500405709 /* Frameworks */,
+				BE2FB4C51C04BCA500405709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2FB4C91C04BCA500405709 /* PBXTargetDependency */,
+			);
+			name = SwrveTestTests;
+			productName = SwrveTestTests;
+			productReference = BE2FB4C71C04BCA500405709 /* SwrveTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE2FB4D11C04BCA500405709 /* SwrveTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2FB4E11C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTestUITests" */;
+			buildPhases = (
+				BE2FB4CE1C04BCA500405709 /* Sources */,
+				BE2FB4CF1C04BCA500405709 /* Frameworks */,
+				BE2FB4D01C04BCA500405709 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2FB4D41C04BCA500405709 /* PBXTargetDependency */,
+			);
+			name = SwrveTestUITests;
+			productName = SwrveTestUITests;
+			productReference = BE2FB4D21C04BCA500405709 /* SwrveTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE2FB4A61C04BCA500405709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Derek Doherty";
+				TargetAttributes = {
+					BE2FB4AD1C04BCA500405709 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = PMA2HBWFND;
+					};
+					BE2FB4C61C04BCA500405709 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE2FB4AD1C04BCA500405709;
+					};
+					BE2FB4D11C04BCA500405709 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE2FB4AD1C04BCA500405709;
+					};
+				};
+			};
+			buildConfigurationList = BE2FB4A91C04BCA500405709 /* Build configuration list for PBXProject "SwrveTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE2FB4A51C04BCA500405709;
+			productRefGroup = BE2FB4AF1C04BCA500405709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2FB4AD1C04BCA500405709 /* SwrveTest */,
+				BE2FB4C61C04BCA500405709 /* SwrveTestTests */,
+				BE2FB4D11C04BCA500405709 /* SwrveTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2FB4AC1C04BCA500405709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2FB4C11C04BCA500405709 /* LaunchScreen.storyboard in Resources */,
+				BE928EFF1C051C7900B2C378 /* Assets.xcassets in Resources */,
+				BE2FB4BC1C04BCA500405709 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4C51C04BCA500405709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4D01C04BCA500405709 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07486C8BA86032DC72B2F32A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwrveTest/Pods-SwrveTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B83A7CD8DB965522B1FFF5B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwrveTest/Pods-SwrveTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DED3336E56611BCD06649D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2FB4AA1C04BCA500405709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2FB4B61C04BCA500405709 /* AppDelegate.m in Sources */,
+				BE2FB4E61C04CE1400405709 /* DownloadViewController.m in Sources */,
+				BE928F021C05B46500B2C378 /* ImageViewController.m in Sources */,
+				BE928F101C087F6600B2C378 /* Comms.m in Sources */,
+				BE928F071C05CDB400B2C378 /* Globals.m in Sources */,
+				BE2FB4B31C04BCA500405709 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4C31C04BCA500405709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE928F091C086B8A00B2C378 /* SwerveTestGlobals.m in Sources */,
+				BE2FB4CC1C04BCA500405709 /* SwrveTestTests.m in Sources */,
+				BE928F121C08888300B2C378 /* SwrveTestComm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2FB4CE1C04BCA500405709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2FB4D71C04BCA500405709 /* SwrveTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE2FB4C91C04BCA500405709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2FB4AD1C04BCA500405709 /* SwrveTest */;
+			targetProxy = BE2FB4C81C04BCA500405709 /* PBXContainerItemProxy */;
+		};
+		BE2FB4D41C04BCA500405709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2FB4AD1C04BCA500405709 /* SwrveTest */;
+			targetProxy = BE2FB4D31C04BCA500405709 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE2FB4BA1C04BCA500405709 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2FB4BB1C04BCA500405709 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE2FB4BF1C04BCA500405709 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2FB4C01C04BCA500405709 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE2FB4D91C04BCA500405709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE2FB4DA1C04BCA500405709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2FB4DC1C04BCA500405709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368DF507AE96DF195AE65912 /* Pods-SwrveTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwrveTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE2FB4DD1C04BCA500405709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361FE37AB4CA6005E0422B2E /* Pods-SwrveTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SwrveTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE2FB4DF1C04BCA500405709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwrveTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwrveTest.app/SwrveTest";
+			};
+			name = Debug;
+		};
+		BE2FB4E01C04BCA500405709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwrveTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwrveTest.app/SwrveTest";
+			};
+			name = Release;
+		};
+		BE2FB4E21C04BCA500405709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwrveTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwrveTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BE2FB4E31C04BCA500405709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwrveTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dd.SwrveTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwrveTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE2FB4A91C04BCA500405709 /* Build configuration list for PBXProject "SwrveTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2FB4D91C04BCA500405709 /* Debug */,
+				BE2FB4DA1C04BCA500405709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2FB4DB1C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2FB4DC1C04BCA500405709 /* Debug */,
+				BE2FB4DD1C04BCA500405709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2FB4DE1C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2FB4DF1C04BCA500405709 /* Debug */,
+				BE2FB4E01C04BCA500405709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2FB4E11C04BCA500405709 /* Build configuration list for PBXNativeTarget "SwrveTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2FB4E21C04BCA500405709 /* Debug */,
+				BE2FB4E31C04BCA500405709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE2FB4A61C04BCA500405709 /* Project object */;
+}

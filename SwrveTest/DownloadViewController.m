@@ -38,6 +38,18 @@
     self.imageUrlField.delegate = self;
     
     //
+    // Put some decoration on the textField
+    //
+    self.imageUrlField.layer.cornerRadius = 5.0;
+    self.imageUrlField.layer.borderWidth = 2.0;
+    self.imageUrlField.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    self.imageUrlField.layer.shadowOpacity = 0.75;
+    self.imageUrlField.layer.shadowOffset = CGSizeMake(0.0, 3.0);
+    self.imageUrlField.layer.shadowRadius = 3.0;
+    
+
+    //
     // Set the NavBar Color
     //
     [self.navigationController.navigationBar setBarTintColor:UICOLORFROMRGB(0x1A1A1A)];

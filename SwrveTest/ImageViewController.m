@@ -31,15 +31,15 @@
     {
         [self.navigationController.navigationBar setTitleTextAttributes:
          [NSDictionary dictionaryWithObjectsAndKeys:
-          [UIFont fontWithName:@"Avenir" size:18],
-          NSFontAttributeName, [UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+         [UIFont fontWithName:@"Avenir" size:18],
+         NSFontAttributeName, [UIColor whiteColor],NSForegroundColorAttributeName, nil]];
     }
     else
     {
         [self.navigationController.navigationBar setTitleTextAttributes:
-         [NSDictionary dictionaryWithObjectsAndKeys:
-          [UIFont fontWithName:@"Avenir" size:17],
-          NSFontAttributeName, [UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+        [NSDictionary dictionaryWithObjectsAndKeys:
+        [UIFont fontWithName:@"Avenir" size:17],
+        NSFontAttributeName, [UIColor whiteColor],NSForegroundColorAttributeName, nil]];
     }
     
     //
@@ -88,11 +88,20 @@
          //
          // Use an alert dialog here to indicate a problem with loading the image
          //
-         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"There was an error loading the image"
-                                                    message:[NSString stringWithFormat:@"%@",[error localizedDescription]]
-                                                            delegate:nil
-                                                   cancelButtonTitle:@"OK" otherButtonTitles:nil];
-         [alertView show];
+         UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"There was an error loading the image" message:[NSString stringWithFormat:@"%@",[error localizedDescription]] preferredStyle:UIAlertControllerStyleAlert];
+         
+         UIAlertAction *cancelAction = [UIAlertAction
+                                        actionWithTitle:@"OK"
+                                        style:UIAlertActionStyleCancel
+                                        handler:^(UIAlertAction *action)
+                                        {
+                                            
+                                        }];
+         [alertVC addAction:cancelAction];
+         
+         [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentViewController:alertVC animated:YES completion:^{
+             
+         }];
          
      }];
     

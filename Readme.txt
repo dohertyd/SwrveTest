@@ -11,8 +11,11 @@ The background Image downloading is handled via the AFNetworking UIImage categor
 in the Comms class.
 
 
-The image URL is persisted via the Globals singelton class and NSUserDefaults
+The image URL text is persisted via the Globals singelton class and NSUserDefaults
+A test image is pre filled to allow easy testing
 
+Basic URL error handling is handled via the AFNetworking error block, an error dialog is presented
+in this case
 
 The unit tests cover the Global data store and the Comms classes 
 
